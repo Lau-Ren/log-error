@@ -6,6 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "log-error": "./app/index.js"
+  },
   "author": "Lauren Colls",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "prompt": "^1.0.0"
+  }
 }
