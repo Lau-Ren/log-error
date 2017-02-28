@@ -6,8 +6,17 @@ var prompt = require('prompt');
 
 prompt.start();
 
-prompt.get(['Error', 'Solution', 'Tags'], function(err, res){
+prompt.get(['error','description', 'solution', 'tags', 'reference'], function(err, res){
 
-console.log(res)
+    let newTags = res.tags.replace(/ /g,'').split(',');
+    let newRefs = res.references.replace(/ /g,'').split(',');
+
+    let newErr = {
+        error: res.error,
+        description: res.description,
+        tags: newTags,
+        references: newRefs
+    };
+console.log(newErr)
 
 });

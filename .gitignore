@@ -1,2 +1,5 @@
 node_modules
 multi-patch-tmp
+.idea/
+
+npm-debug.log
